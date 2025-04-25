@@ -15,9 +15,9 @@ function Hero() {
         
     })
   return (
-    <div className="flex flex-wrap  mt-20 ">
+    <div className="flex flex-wrap  mt-10 ">
       <div className="w-full lg:w-1/2">
-        <div className="flex flex-col sm:items-center md:items-center lg:items-start lg:pl-20 mx-10">
+        <div className="flex flex-col sm:items-center md:items-center lg:items-center lg:pl-20 mx-10">
         
           <motion.h1   
           variants={container(0)}
@@ -38,7 +38,7 @@ function Hero() {
             initial="hidden"
             animate="visible"
             className="text-4xl bg-clip-text text-transparent tracking-thin 
-                         bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"
+                         bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-4"
           >
             Full Stack Dev
           </motion.div>
@@ -53,14 +53,15 @@ function Hero() {
             variants={container(1)}
             initial="hidden"
             animate="visible"
-          className="text-slate-200 my-2 font-light tracking-wider py-6 max-w-xl text-md ml-10 ">
+          className="text-slate-200 my-2 font-light tracking-wider py-2 max-w-xl text-md  justify-center">
             {HERO_CONTENT}
           </motion.p>
-          <motion.div className="flex gap-10 justify-center ml-40 mb-4"
+          <motion.div className="flex gap-10 justify-center ml-10 mb-8 mt-4"
           variants={container(2)}
             initial="hidden"
             animate="visible">
-              <button className="text-md bg-violet-400 text-white rounded-md opacity-0.8 shadow-md p-4">Contact ME!</button>
+              <a href="#contact" className="pt-4 px-4 text-md bg-violet-400 text-white rounded-md opacity-0.8 shadow-md p-4">
+                Contact ME!</a>
               <a download href="./CVROMANA.pdf" className="pt-4 px-4 border-2 border-purple-700  hover:border-purple-300 text-md
                bg-black text-purple-700
                hover:text-purple-300 rounded-md  shadow-md" >Download CV </a>
@@ -68,12 +69,12 @@ function Hero() {
           </motion.div>
         </div>
       </div>
-      <div className="items-center w-full lg:w-1/2 px-20 pt-20">
+      <div className="items-center w-full  lg:w-1/2 m-auto">
         <motion.div 
         initial={{x:100,opacity:0}}
         animate={{x:0, opacity:1}}
         transition={{duration:1, delay:1.2}}
-        className="justify-center  ">
+        className="justify-center items-center mx-auto sm:m-0 sm:p-0">
           <Image
             src="/assets/fotoperfil.jpg"
             width={500}

@@ -25,18 +25,19 @@ const iconVariants=(duration)=>({
 
 function Tecnologies() {
     return (
-        <div className='pb-4 mx-20 '>
+        <div className='pb-4 sm:mx-0 md:mx-10 lg:mx-20 '>
            
            <motion.h1 
            whileInView={{opacity:1, x:0}}
            initial={{opacity:0, x:-100}}
            transition={{duration:1.5}}
            className='my-10 text-start text-2xl text-neutral-200 pl-20 '>Tecnologies</motion.h1>
-           <div className="flex ">
+           
            <h2 className='my-10 text-start text-xl text-neutral-400 mx-20'>FrontEnd</h2>
+           
             <div 
            
-             className='flex flex-wrap items-center justify-center gap-3'>
+             className='flex flex-wrap items-start justify-start gap-3 lg:pl-20'>
                 <motion.div 
                
                 variants= {iconVariants(2.5)}
@@ -100,10 +101,10 @@ function Tecnologies() {
                     <FaBootstrap className='text-4xl text-violet-600'/>
                 </motion.div>
                </div>
-               </div>
-               <div className='flex'>
+               
+               
                 <h2 className='my-10 text-start text-xl text-neutral-400 mx-20'>BackEnd</h2>
-                <div className='flex flex-wrap items-center justify-center gap-3'>
+                <div className='flex flex-wrap items-start justify-start gap-3 lg:pl-20'>
                 <motion.div 
                  variants= {iconVariants(2)}
                  initial="initial"
@@ -143,7 +144,7 @@ function Tecnologies() {
                     <FaNodeJs className='text-4xl text-green-600'/>
                 </motion.div>
                     </div>
-                </div>
+                
                
             
         </div>

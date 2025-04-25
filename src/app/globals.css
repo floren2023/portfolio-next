@@ -30,3 +30,13 @@ body {
   font-family: "Inter",  sans-serif;
 }
 
+.contact{
+  background-image: url("/contact.jpg")  ;
+  
+background-repeat: no-repeat;
+background-size:contain ;
+margin: auto;
+width:700px;
+
+  
+}

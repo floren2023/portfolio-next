@@ -6,14 +6,14 @@ import { CardExperience } from './CardExperience'
 
 function Experience() {
     return (
-        <div className='mx-20'>
+        <div className='sm:mx-0 md:mx-10 lg:mx-20'>
             <motion.div
             whileInView={{opacity:1, x:0}}
             initial={{opacity:0, x:-100}}
             transition={{duration:1.5}}
              className='my-10 text-start text-2xl text-neutral-200 pl-20  '>
             Experience</motion.div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4  sm:justify-center mx-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4  sm:justify-center mx-10 '>
                  {EXPERIENCES.map((experience,index)=>
                 (
                     

@@ -1,10 +1,8 @@
 
-export const HERO_CONTENT = `I am a passionate of programming 
-   I have shaped my skills in front-end technologies like React and Next.js, 
-   as well as back-end technologies like Node.js, MySQL, PostgreSQL and MongoDB.`;
+export const HERO_CONTENT = `I am a passionate programmer. I have shaped my skills in front-end technologies
+ such as React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL and MongoDB.`;
 
-export const HERO_ABOUT = `Passionate programmer and dreamer 
-  and passionate of nature and tracking `;
+export const HERO_ABOUT = `I am a passionate programmer and dreamer who loves nature and hiking. `;
 
 export const EXPERIENCES = [
   {
@@ -141,8 +139,8 @@ export const SOFT_SKILLS=[
   },
   
   {
-    name:"creativity",
-    description:"searching good innovative solutions"
+    name:"creative",
+    description:"search good innovative solutions"
 
   },
   

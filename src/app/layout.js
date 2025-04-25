@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import NavbarPortfolio from "../components/NavbarPortfolio";
 
 const interSans = Inter({
   variable: "--font-inter-sans",
@@ -21,6 +22,8 @@ export default function RootLayout({ children }) {
       >
         <div className="absolute inset-0 -z-10 h-[3200px]  w-full 
       [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
+         <NavbarPortfolio />
+
         {children}
         </div>
       </body>
