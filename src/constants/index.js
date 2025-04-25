@@ -1,92 +1,181 @@
 
-export const HERO_CONTENT = `I am a passionate full stack developer
- with a illusion of crafting robust and scalable web applications.
-   I have honed my skills in front-end technologies like React and Next.js, 
-   as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB.
-    My goal is to create innovative solutions that drive business growth
-     and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a passionate of programming 
+   I have shaped my skills in front-end technologies like React and Next.js, 
+   as well as back-end technologies like Node.js, MySQL, PostgreSQL and MongoDB.`;
 
-export const ABOUT_TEXT = `I am a dedicated full stack developer
- who creates efficient and user-friendly web applications and passionate of nature and tracking `;
+export const HERO_ABOUT = `Passionate programmer and dreamer 
+  and passionate of nature and tracking `;
 
 export const EXPERIENCES = [
   {
     year: "2025 - Present",
-    role: "Full Stack Developer",
-    company: "",
-    description: ` Develop a web application using Next.js with Neon on Vercel Potsgresql and Next.js Auth,Astro`,
+    role: "Full Stack Dev",
+    company: "personal project",
+    description: ` Develop  web applications using Next.js with Neon on Vercel, Potsgresql and Next Auth,Astro`,
     technologies: ["Next.js", "React.js", "Postgresql","Astro"],
   },
   {
     year: "2024 - 2025",
-    role: "Full stack developer",
-    company: "",
-    description: `Worked in many projects with React.js, Redux.Backend SpringBoot java, Postgresql`,
+    role: "Full Stack Dev",
+    company: "personal project",
+    description: `Worked in projects with React.js, Redux.Backend SpringBoot java, Postgresql`,
     technologies: ["HTML", "CSS", "React.js", "Postgresql","java"],
   },
   {
     year: "2023 - 2024",
-    role: "Full Stack Developer",
-    company: "",
-    description: `Developed and maintained web applications using Angular, React.js, and SpringBoot, Postgresql.`,
+    role: "Full Stack Dev",
+    company: "personal project",
+    description: `Developed  web applications using Angular, React.js, and SpringBoot, Postgresql.`,
     technologies: ["Angular", "React.js",  "Postgres","Css","SpringBoot",],
   },
   {
     year: "2022 - 2023",
-    role: "Full Stack Developer",
-    company: "",
-    description: `implementing aplications Mern, a project Rest-full Laravel Mysql `,
+    role: "Full Stack Dev",
+    company: "personal project",
+    description: `implementing aplications Mern, project Rest-full Laravel Mysql `,
     technologies: ["React.js", "Mongodb", "PHP", "Mysql", "Css", "Html5"],
   },
 ];
+export const EDUCATION = [
+  {
+    year: "1988 - 1993",
+    title: "Graduate Bachelor Computer Science Engineering ",
+    center: "UPB",
+    description: `Computer System Engineering`,
+    address: 'Bucharest-Rumania',
+  },
+  {
+    year: "2020",
+    title: "Methods Agile Scrum ",
+    center: "FEMXA",
+    description: `Agile Methods and Implement-online`,
+    address: 'Pontevedra-Spain',
+  },
+  {
+    year: "2020",
+    title: "Certificate SAP - BI ",
+    center: "SAP",
+    description: `Modul Bi SAP , clouding- online `,
+    address: 'SAP STUDY CENTER',
+  },
+]
 
 export const PROJECTS = [
   {
     title: "Website Cata de Vinos",
     image: "/assets/projects/project1.png",
     description:
-      "e-commerce website with  product listing, shopping cart, and user authentication.",
+      "e-commerce website, product listing, shopping cart and user authentication.",
     technologies: ["Shadcn/ui", "Tailwind", "Next.js", "Drizzle", "Postgresql","Neon"],
     github:"https://github.com/floren2023/cata-de-vinos"
   },
   {
-    title: "Food Delivery Online E-commerce",
-    image:"/assets/projects/project-2.jpg" ,
+    title: "Website Cata de Vinos",
+    image: "/assets/projects/project7.png",
     description:
-      "An application of deliver food online from more restaurants",
+      "A static page with Blog for `Cata de Vinos`",
+    technologies: ["Shadcn/ui", "Tailwind", "Astro", "Drizzle", "Sqlite","Turso"],
+    github:"https://github.com/floren2023/catadevinos"
+  },
+  {
+    title: "Website Medicare",
+    image: "/assets/projects/project8.png",
+    description:
+      "A static page for Medicare",
+    technologies: ["Shadcn/ui", "Tailwind", "Astro"],
+    github:"https://github.com/floren2023/medicare_astro/tree/master"
+  },
+  {
+    title: "Food Delivery Online E-commerce",
+    image:"/assets/projects/project3.png" ,
+    description:
+      " Deliver food online, many supliers",
     technologies: ["MUI", "Tailwind", "React", "SpringBoot","Postgresql"],
-    github:"https://github.com/floren2023/cata-de-vinos"
+    github:"https://github.com/floren2023/frontendfooddeliveryreact",
+    gitbackend:"https://github.com/floren2023/onlidefooddeliverysytem"
   },
   {
     title: "Front End Clothes Store ",
-    image: "/assets/projects/project-3.jpg" ,
+    image: "/assets/projects/project4.png" ,
     
     description:
-      "Front End  Clothes Store with a MUI Template",
+      "Front End Clothes Store, MUI Template",
     technologies: ["Tailwindcss", "CSS", "React", "Mui"],
-    github:"https://github.com/floren2023/cata-de-vinos"
+    github:"https://github.com/floren2023/cata-de-vinos",
+    
   },
   {
     title: "Holiday Inn",
-    image: "/assets/projects/project-4.jpg" ,
+    image: "/assets/projects/project2.png" ,
     
     description:
-      "A Booking app of the Hotel Holiday Inn",
+      " Booking app, Hotel Holiday Inn",
     technologies: ["Tailwindcss", "CSS", "React", "Mui", "SpringBoot", "Postgresql"],
-    github:"https://github.com/floren2023/cata-de-vinos"
+    github:"https://github.com/floren2023/holidayInn-frontendreact",
+    gitbackend:"https://github.com/floren2023/holidayInn-backend-react"
   },
   {
-    title: " Front End Backend Car Rental",
-    image: "/assets/projects/project5.jpg" ,
+    title: " E-commerce Sport's Products",
+    image: "/assets/projects/poject5.png" ,
     description:
-      "A Car Rental store E-commerce",
+      " E-commerce, sports ",
     technologies: ["Angular", "Tailwind", "Typescript", "Mui", "SpringBoot", "Postgresql"],
-    github:"https://github.com/floren2023/cata-de-vinos"
+    github:"https://github.com/floren2023/ecommerceweb",
+    gitbackend:"https://github.com/floren2023/backendecommerceweb/tree/main/ecommerceweb"
+  },
+  {
+    title: " E-commerce Restaurant Front End",
+    image: "/assets/projects/project6.png" ,
+    description:
+      " Restaurant  with menus, booking",
+    technologies: ["Angular", "Tailwind", "Typescript", "Mui", "SpringBoot", "Postgresql"],
+    github:"https://github.com/floren2023/frontend-restaurante",
+    
   },
 ];
+export const SOFT_SKILLS=[
+  {
+    name:"dedicated",
+    description:"dedicated of achieving the goal"
+
+  },
+  
+  {
+    name:"creativity",
+    description:"searching good innovative solutions"
+
+  },
+  
+  {
+    name:"hard worker",
+    description:"search the best solution in hard times"
+
+  },
+  
+
+]
+
+export const LANGUAGES=[
+  {
+  lang:"English", 
+  cal:"****",
+  },
+  {
+    lang:"Spanish", 
+    cal:"*****",
+    },
+    {
+      lang:"Romanian", 
+      cal:"*****",
+      },
+      {
+        lang:"French", 
+        cal:"*",
+        },
+]
 
 export const CONTACT = {
-  address: " ",
+  address: "Comanesti Judetul Bacau Romania ",
   phoneNo: " ",
   email: "vakarflorenta@gmail.com",
 };

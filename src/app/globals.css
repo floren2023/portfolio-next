@@ -18,13 +18,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #44229e;
     --foreground: #ededed;
   }
 }
 
 body {
-  background: var(--background);
+  align-content: center;
+  background: #44229e;
   color: var(--foreground);
   font-family: "Inter",  sans-serif;
 }
+

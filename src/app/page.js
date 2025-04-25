@@ -3,7 +3,8 @@ import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Tecnologies from "../components/Tecnologies";
 import Experience from "../components/Experience";
-
+import Contact from "../components/Contact"
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return(
@@ -11,15 +12,24 @@ export default function Home() {
   
     <div >
     <div
-      className="mx-auto items-center" >
+      className="" >
       <NavbarPortfolio />
 
-      <div className=" pt-30">
+      <div className="flex flex-col  pt-30 mx-auto justify-center">
+        <div id="home">
+
         <Hero />
-        {/* <About /> */}
+        </div>
+       <div id="skills">
+       <Skills/>
         <Tecnologies/>
         <Experience/>
-        <Projects/>
+       </div>
+       <div id="projects">
+       <Projects/>
+       </div>
+       
+        <Contact/>
       </div>
       
     </div></div>

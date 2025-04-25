@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${interSans.variable}  antialiased`}
       >
-        <div className="absolute inset-0 -z-10 h-[3000px] w-full 
+        <div className="absolute inset-0 -z-10 h-[3200px]  w-full 
       [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
         {children}
         </div>
