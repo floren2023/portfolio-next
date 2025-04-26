@@ -8,7 +8,7 @@ export function CardExperience({
   technologies,
 }) {
   return (
-    <Card className="bg-gray-900 text-slate-200 text-md h-[280px] border-none">
+    <Card className="bg-gray-900 text-slate-200 text-md h-[280px] border-none shadow3">
       <div className="w-full ">
         <p className=" text-neutral-400 text-sm mb-4">{year}</p>
       

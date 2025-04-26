@@ -25,7 +25,7 @@ const iconVariants=(duration)=>({
 
 function Tecnologies() {
     return (
-        <div className='pb-4 sm:mx-0 md:mx-10 lg:mx-20 '>
+        <div className='pb-4 sm:mx-0 md:mx-10 lg:mx-20 pt-4'>
            
            <motion.h1 
            whileInView={{opacity:1, x:0}}

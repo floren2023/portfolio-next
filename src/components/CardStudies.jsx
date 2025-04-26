@@ -8,7 +8,7 @@ export default function CardStudies({
   address,
 }) {
   return (
-    <Card className="bg-gray-900 text-slate-200 text-md h-[240px] border-none">
+    <Card className="bg-gray-900 text-slate-200 text-md h-[240px] border-none shadow3">
       <div className="w-full ">
         <p className=" text-neutral-400 text-sm mb-4">{year}</p>
         <p className=" text-neutral-400 text-sm mb-4">{center}</p>

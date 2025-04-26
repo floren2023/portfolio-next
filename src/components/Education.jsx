@@ -12,7 +12,11 @@ export default function Education() {
            initial={{opacity:0, x:-100}}
            transition={{duration:1.5}}
          className='my-10 text-start text-2xl text-neutral-200 pl-20 '>Education</motion.h1>
-        <div className='grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:mx-0 md:mx-0 lg:mx-10 l:pl-20'>
+        <motion.div 
+         whileInView={{opacity:1, x:0}}
+         initial={{opacity:0, x:-100}}
+         transition={{duration:1.2}}
+        className='grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:mx-0 md:mx-0 lg:mx-10 l:pl-20'>
            
             {EDUCATION.map((item,index)=>(
             <div key={index} className='text-white  '>
@@ -22,7 +26,7 @@ export default function Education() {
             </div>
           )  )}
             
-        </div>
+        </motion.div>
         </div>
     )
 }

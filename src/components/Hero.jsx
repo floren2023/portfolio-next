@@ -10,12 +10,12 @@ function Hero() {
     const container=(delay)=>({
        hidden:{x:-100, opacity:0},
        visible:{x:0, opacity:1,
-        transition:{duration:0.5,delay:delay}
+        transition:{duration:0.2,delay:delay}
        }
         
     })
   return (
-    <div className="flex flex-wrap  mt-10 ">
+    <div className="flex flex-wrap  mt-10 " >
       <div className="w-full lg:w-1/2">
         <div className="flex flex-col sm:items-center md:items-center lg:items-center lg:pl-20 mx-10">
         
@@ -60,11 +60,14 @@ function Hero() {
           variants={container(2)}
             initial="hidden"
             animate="visible">
-              <a href="#contact" className="pt-4 px-4 text-md bg-violet-400 text-white rounded-md opacity-0.8 shadow-md p-4">
+              <a href="#contact" className="pt-4 px-4 text-md bg-gradient-to-r
+               from-fuchsia-500 via-violet-500
+                to-blue-500 text-white  opacity-0.8 shadow-md p-4 rounded-lg">
                 Contact ME!</a>
-              <a download href="./CVROMANA.pdf" className="pt-4 px-4 border-2 border-purple-700  hover:border-purple-300 text-md
-               bg-black text-purple-700
-               hover:text-purple-300 rounded-md  shadow-md" >Download CV </a>
+              <a download href="./CVROMANA.pdf" className="pt-4 px-4 border-2 border-fuchsia-600 
+               hover:border-fuchsia-400 text-md
+               bg-black text-fuchsia-600
+               hover:text-fuchsia-400 rounded-lg  shadow-md" >Download CV </a>
                
           </motion.div>
         </div>

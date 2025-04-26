@@ -14,8 +14,12 @@ export function SoftSkills() {
    <div >
        
     
-    <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16
-      p-4 bg-gray-900 border-none sm:mx-0 md:mx-10 lg:mx-20 rounded-md ">
+    <motion.div 
+     whileInView={{opacity:1, x:0}}
+     initial={{opacity:0, x:-100}}
+     transition={{duration:1.2}}
+    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16
+      p-4 bg-gray-900 border-none sm:mx-0 md:mx-10 lg:mx-20 rounded-md shadow3 morder-1 border-fuchsia-500">
     <div className="mx-auto ">
         <img src="./hombre.png" width="180px" height="200px" alt="man"/>
     </div>
@@ -37,7 +41,7 @@ export function SoftSkills() {
 
       </div>
     
-    </div>
+    </motion.div>
     </div>
 
     </div>

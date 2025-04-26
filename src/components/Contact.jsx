@@ -1,16 +1,28 @@
+"use client"
 import React from "react";
 import { CONTACT } from "../constants/index.js";
+import {motion} from "framer-motion"
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 function Contact() {
   return (
+    <div  className="bg-gray-900 pt-8 pb-10">
+      <motion.h1
+         whileInView={{opacity:1, y:0}}
+         initial={{opacity:0, y:-100}}
+         transition={{duration:0.5}}
+         className=" mb-10 text-center text-4xl text-fuchsia-600">
+          CONTACT
+        </motion.h1>
+    
     <div
-      id="contact"
-      className="bg-linear-45 from-indigo-500 via-purple-500 to-pink-400 grid sm: grid-cols-1
-       md:grid-cols-1 lg:grid-cols-2    mt-4 sm:mx-0 md:mx-20 lg:mx-50 rounded-md mb-10 p-6"
+      
+      className=" grid sm:grid-cols-1 bg-white
+       md:grid-cols-1 lg:grid-cols-2 mt-4 sm:mx-0 md:mx-20 lg:mx-50 rounded-md mb-10 p-6 shadow3"
     >
       <div className=" ">
-        <h1 className="text-center text-4xl text-purple-700">
-          Get in <span className="text-neutral-500">Touch!</span>
+        <h1 className="text-center text-4xl text-purple-700 pt-10">
+          Get in <span className="text-fuchsia-700">Touch!</span>
         </h1>
         <div className="pr-0 mr-0 pt-20">
           <img
@@ -22,30 +34,13 @@ function Contact() {
         </div>
       </div>
 
-      <div className="sm:py-0 sm:pl-0 sm:pr-0 md:py-10  lg:py-10 lg:pl-0 lg:pr-10  sm:mx-auto sm:w-full">
+      <div className="sm:py-0 sm:pl-0 sm:pr-0 md:py-4  lg:py-4 lg:pl-0 lg:pr-10  sm:mx-auto sm:w-full">
         <form
-          className=" p-4 pt-10  text-center  opacity-0.6
+          className=" p-4 pt-4  text-center  opacity-0.6
   mt-4 bg-gradient-to-r from-indigo-500 from-10% via-purple-500 via-30%
    to-violet-500 to-90% ... text-slate-300 rounded-md "
         >
-          <div className="mb-5">
-            <label
-              htmlFor="name"
-              className="block mb-2 text-sm font-medium text-slate-200 dark:text-white"
-            >
-              Your name
-            </label>
-            <input
-              type="text"
-              id="name"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
-     focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600
-      dark:placeholder-gray-400 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500"
-              placeholder="name"
-              required
-            />
-          </div>
-          <div className="mb-5">
+           <div className="mb-5">
             <label
               htmlFor="email"
               className="block mb-2 text-sm font-medium text-slate-200 dark:text-white"
@@ -62,6 +57,24 @@ function Contact() {
               required
             />
           </div>
+          <div className="mb-5">
+            <label
+              htmlFor="subject"
+              className="block mb-2 text-sm font-medium text-slate-200 dark:text-white"
+            >
+              Your Subject
+            </label>
+            <input
+              type="text"
+              id="subject"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+     focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600
+      dark:placeholder-gray-400 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500"
+              placeholder="subject"
+              required
+            />
+          </div>
+         
           <div className="mb-5">
             <label
               htmlFor="message"
@@ -89,13 +102,15 @@ function Contact() {
             Send
           </button>
         </form>
-        <div className="flex flex-col gap-2 text-md text-violet-900 mt-10 justify-center items-center mx-auto text-center">
+        <div className="flex flex-col gap-2 text-md text-slate-600 mt-10 justify-center items-center mx-auto text-center">
           <p>{CONTACT.address}</p>
           <p>{CONTACT.phoneNo}</p>
           <p>{CONTACT.email} </p>
+          <div className="flex gap-4 text-xl text-gray-600 pt-4"> <FaLinkedinIn />
+                    <FaGithub /></div>
         </div>
       </div>
-    </div>
+    </div></div>
   );
 }
 
