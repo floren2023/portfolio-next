@@ -14,7 +14,11 @@ export function SoftSkills() {
    <div >
        
     
-    <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16  p-4 bg-gray-900 border-none  w-2/3 mx-auto rounded-md ">
+    <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16
+      p-4 bg-gray-900 border-none sm:mx-0 md:mx-10 lg:mx-20 rounded-md ">
+    <div className="mx-auto ">
+        <img src="./hombre.png" width="180px" height="200px" alt="man"/>
+    </div>
      <div className="sm:col-span-1 md:col-span-1 lg:col-span-2 pt-10">
       {SOFT_SKILLS.map((item, index) => (
         <div className="flex gap-10  justify-items-start " key={index}>

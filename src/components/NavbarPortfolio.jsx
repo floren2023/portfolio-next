@@ -1,20 +1,18 @@
-"use client"
+"use client";
 import React from "react";
-import { usePathname } from "next/navigation";
+
 import {
   Navbar,
   NavbarBrand,
   NavbarCollapse,
-  
+  NavbarLink,
   NavbarToggle,
 } from "flowbite-react";
-import Link from "next/link";
-import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { Link } from "next/link";
 
 export default function NavPortfolio() {
-  const pathname = usePathname();
-  
   return (
     <div className="bg-neutral-800 px-20 fixed top-0 w-full z-40">
       <Navbar fluid rounded className="bg-neutral-800 z-40 py-4">
@@ -28,8 +26,7 @@ export default function NavPortfolio() {
           <div className="flex  m-2 gap-4 items-end text-end text-xl text-slate-300  justify-end  ">
             <FaLinkedinIn />
             <FaGithub />
-            <FaSquareXTwitter />
-            <FaInstagram />
+
             <label className="inline-flex items-center cursor-pointer pl-4">
               <span className="mr-3 text-sm font-medium text-gray-200 dark:text-gray-300">
                 Blog
@@ -44,51 +41,19 @@ export default function NavPortfolio() {
           <NavbarToggle />
         </div>
         <NavbarCollapse>
-         
-          <ul className="flex gap-6">
-            <li>
-            <Link
-            href="#home"
-            className={
-              pathname === "/" || pathname==="#home"
-                ? " text-md text-purple-600  tracking-wide  uppercase"
-                : "text-slate-200 text-md tracking-wide  uppercase hover:text-purple-600"
-            }
-            
-          >
-            Home
-          </Link>
-            </li>
-<li>
-<Link
-            href="#skills"
-            className={
-               pathname === "#skills"
-                ? " text-md text-purple-600  tracking-wide uppercase"
-                : "text-slate-200 text-md tracking-wide  uppercase hover:text-purple-600"
-            }
-          >
-            Skills
-          </Link>
-</li>
-<li>
-<Link
-            href="#projects"
-            className={
-              pathname === "#projects"
-                ? " text-md text-purple-600  tracking-wide uppercase"
-                : "text-slate-200 text-md tracking-wide  uppercase hover:text-purple-600"
-            }
-          >
-            Projects
-          </Link>
-</li>
-
-
-
-          </ul>
+          <NavbarLink href="#home" className="text-md uppercase">
+          Home
+          
+          </NavbarLink>
+          <NavbarLink href="#skills" className="text-md uppercase">
+          Skills
+          
+          </NavbarLink>
+          <NavbarLink href="#projects" className="text-md uppercase">
+          Projects
           
           
+          </NavbarLink>
           
 
           {/* <Link href="/blog" className="text-slate-200 text-md active:text-purple-600 hover:text-purple-600 tracking-wide">Blog</Link> */}
