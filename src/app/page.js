@@ -1,25 +1,20 @@
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
-import Skills from "@/components/Skills";
+
 
 export default function Home() {
   return (
-    
+    <div className=" -z-10  h-full  w-full 
+    [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
       
-        <div className="flex flex-col  pt-30 mx-auto justify-center">
-          <div id="home">
+        <div className="mt-10 pt-10 mx-auto justify-center  pb-20">
+          
             <Hero />
-          </div>
-          <div id="skills">
-            <Skills />
-          </div>
-          <div id="projects">
-            <Projects />
-          </div>
-<div id="contact">
-          <Contact />
-          </div>
+          
+          
+         </div>
+          
         </div>
       
     

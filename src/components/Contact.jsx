@@ -6,7 +6,9 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 function Contact() {
   return (
-    <div  className="bg-gray-900 pt-8 pb-10">
+    <div className=" -z-10  h-full mt-10 pt-10  w-full 
+    [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
+    <div  className="  pt-8 pb-10 ">
       <motion.h1
          whileInView={{opacity:1, y:0}}
          initial={{opacity:0, y:-100}}
@@ -17,8 +19,9 @@ function Contact() {
     
     <div
       
-      className=" grid sm:grid-cols-1 bg-white
-       md:grid-cols-1 lg:grid-cols-2 mt-4 sm:mx-0 md:mx-20 lg:mx-50 rounded-md mb-10 p-6 shadow3"
+      className=" grid sm:grid-cols-1 bg-transparent
+       md:grid-cols-1 lg:grid-cols-2 mt-4 sm:mx-0 md:mx-20 
+       lg:mx-50 rounded-md mb-10 p-6 border-1 border-slate-700"
     >
       <div className=" ">
         <h1 className="text-center text-4xl text-purple-700 pt-10">
@@ -34,11 +37,12 @@ function Contact() {
         </div>
       </div>
 
-      <div className="sm:py-0 sm:pl-0 sm:pr-0 md:py-4  lg:py-4 lg:pl-0 lg:pr-10  sm:mx-auto sm:w-full">
+      <div className="sm:py-0 sm:pl-0 sm:pr-0 md:py-4  lg:py-4 lg:pl-0 lg:pr-10 
+       sm:mx-auto sm:w-full">
         <form
           className=" p-4 pt-4  text-center  opacity-0.6
-  mt-4 bg-gradient-to-r from-indigo-500 from-10% via-purple-500 via-30%
-   to-violet-500 to-90% ... text-slate-300 rounded-md "
+  mt-4 bg-gradient-to-r from-violet-900 from-10% via-purple-500 via-40%
+   to-fuchsia-500 to-90% ... text-slate-300 rounded-md "
         >
            <div className="mb-5">
             <label
@@ -102,15 +106,16 @@ function Contact() {
             Send
           </button>
         </form>
-        <div className="flex flex-col gap-2 text-md text-slate-600 mt-10 justify-center items-center mx-auto text-center">
+        <div className="flex flex-col gap-2 text-md text-slate-300 
+        mt-10 justify-center items-center mx-auto text-center">
           <p>{CONTACT.address}</p>
           <p>{CONTACT.phoneNo}</p>
           <p>{CONTACT.email} </p>
-          <div className="flex gap-4 text-xl text-gray-600 pt-4"> <FaLinkedinIn />
+          <div className="flex gap-4 text-xl text-slate-300 pt-4"> <FaLinkedinIn />
                     <FaGithub /></div>
         </div>
       </div>
-    </div></div>
+    </div></div></div>
   );
 }
 

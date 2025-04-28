@@ -14,25 +14,23 @@ export function SoftSkills() {
    <div >
        
     
-    <motion.div 
-     whileInView={{opacity:1, x:0}}
-     initial={{opacity:0, x:-100}}
-     transition={{duration:1.2}}
-    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16
-      p-4 bg-gray-900 border-none sm:mx-0 md:mx-10 lg:mx-20 rounded-md shadow3 morder-1 border-fuchsia-500">
-    <div className="mx-auto ">
-        <img src="./hombre.png" width="180px" height="200px" alt="man"/>
+    <div 
+     
+    className="flex gap-6
+      p-4 bg-gray-900 border-none sm:mx-0 md:mx-4 lg:mx-10 rounded-md shadow3">
+    <div className="w-1/5 ">
+        <img src="./hombre.png" width="150px" height="180px" alt="man"/>
     </div>
-     <div className="sm:col-span-1 md:col-span-1 lg:col-span-2 pt-10">
+     <div className=" pt-10 w-3/5">
       {SOFT_SKILLS.map((item, index) => (
-        <div className="flex gap-10  justify-items-start " key={index}>
-          <div className="text-md text-slate-200 w-1/3 text-start pl-5 font-medium">{item.name}  -- </div>
-          <div className="text-md text-slate-400 text-start ">{item.description}</div>
+        <div className="flex gap-10  justify-items-start mb-2 " key={index}>
+          <div className="text-md text-slate-200 w-1/3 text-start  font-medium justify-center">{item.name}   </div>
+          <div className="text-md text-slate-400 text-start justify-start">{item.description}</div>
         </div>
       ))}
       </div>
-      <div className="text-slate-200 p-4 pl-10">
-        <h4 className="text-slate-100 text-bold text-start mb-2">Languages</h4>
+      <div className="text-slate-200 p-4 ">
+        <h4 className="text-slate-100 text-bold text-start mb-2 mt-4">Languages</h4>
   {LANGUAGES.map((language,index)=>(
     <div key={index} className="text-slate-300">
         {language.lang}<span className="text-amber-500 text-md text-medium pl-4">{language.cal}</span>
@@ -41,7 +39,7 @@ export function SoftSkills() {
 
       </div>
     
-    </motion.div>
+    </div>
     </div>
 
     </div>

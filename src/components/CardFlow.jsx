@@ -1,10 +1,11 @@
 
 import { Card } from "flowbite-react";
+import {  FaGithub , FaGlobe} from "react-icons/fa";
 
-export function CardFlow({title,description,image,technologies,github,gitbackend}) {
+export function CardFlow({title,description,image,technologies,github,gitbackend,publicat}) {
   return (
     <Card
-      className="max-w-sm  mt-10 sm:h-[450px] lg:mt-0 lg:h-[430px] bg-gray-900  border-none shadow3"
+      className="max-w-sm shadow3 mt-10 sm:h-[450px]  lg:mt-0 lg:h-[440px] bg-gray-900  border-1 border-neutral-600"
       imgAlt={image}
       imgSrc={image}
     >
@@ -22,15 +23,19 @@ export function CardFlow({title,description,image,technologies,github,gitbackend
         ))}
       </div>
       </div>
-      <div className='flex  gap-10  content-baseline  justify-center'>
+      <div className='flex  gap-4  content-baseline  justify-center border-1 border-slate-400 p-3 items-center w-[74px] rounded-2xl mx-auto '>
       <div className=' align-bottom items-baseline'>
-        <a href={github} className='text-sm text-red-500  '>
-        Git front-end</a>
+        <a href={github} className='text-xl text-green-500  '>
+         <FaGithub /></a>
       </div>
-     {gitbackend&&( <div className='align-bottom items-baseline'>
+       <div className='align-bottom items-baseline'>
+        <a href={publicat} className='text-xl text-red-500  '>
+        <FaGlobe/></a>
+      </div>
+    {/*  {gitbackend&&( <div className='align-bottom items-baseline'>
         <a href={gitbackend} className='text-sm text-red-500  '>
         Git backend</a>
-      </div>)}
+      </div>)} */}
       </div>
     </Card>
   );

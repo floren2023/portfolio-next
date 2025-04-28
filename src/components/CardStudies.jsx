@@ -1,28 +1,20 @@
-import { Card } from "flowbite-react";
+
 
 export default function CardStudies({
   year,
   title,
-  center,  
+  center,
   description,
   address,
 }) {
   return (
-    <Card className="bg-gray-900 text-slate-200 text-md h-[240px] border-none shadow3">
-      <div className="w-full ">
-        <p className=" text-neutral-400 text-sm mb-4">{year}</p>
-        <p className=" text-neutral-400 text-sm mb-4">{center}</p>
-      
-        <h5 className="font-semibold mb-4 text-md">
-           <span className="text-sm text-purple-100">{title}</span>
-        </h5>
-        <div className="mb-8 text-neutral-400 text-sm  ">
-          {description}
-        </div>
-        <div className="">
-        <span className="text-sm text-purple-100">{address}</span>
-        </div>
-      </div>
-    </Card>
+    <div className="bg-gray-900 shadow3 h-[200px] border-1 border-neutral-600 p-4 flex gap-2 flex-col rounded-md ">
+      <div className="font-semibold  text-md  text-purple-600">{title}</div>
+      <div className=" text-neutral-400 text-sm  ">{description}</div>
+      <p className=" text-neutral-400 text-sm ">
+        {year} - <span className="text-neutral-300">{center}</span>
+      </p>
+      <p className="text-sm text-neutral-400 italic justify-center text-center mt-2">{address}</p>
+    </div>
   );
 }

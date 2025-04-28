@@ -1,8 +1,17 @@
 
-export const HERO_CONTENT = `I am a passionate programmer. I have shaped my skills in front-end technologies
+export const ABOUT_CONTENT = `I have shaped my skills in front-end technologies
  such as React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL and MongoDB.`;
 
-export const HERO_ABOUT = `I am a passionate programmer and dreamer who loves nature and hiking. `;
+export const ABOUT = `I am a passionate programmer and dreamer who loves nature and hiking. `;
+
+export const HERO_PRINCIPAL=`Are you suffering of: lack of online presence,
+    outdated websites, difficulty selling online, bad SEO issues, bad user experience, lost marketing opportunities,
+     disorganized content, credibility problems ?`
+export const  HERO_SECONDARY=`I build professional websites especially for new or small businesses.`
+
+   
+
+
 
 export const EXPERIENCES = [
   {
@@ -37,13 +46,20 @@ export const EXPERIENCES = [
 export const EDUCATION = [
   {
     year: "1988 - 1993",
-    title: "Graduate Bachelor Computer Science Engineering ",
+    title: "Graduate Bachelor Computer Engineering ",
     center: "UPB",
     description: `Computer System Engineering`,
     address: 'Bucharest-Rumania',
   },
   {
-    year: "2020",
+    year: "2011-2012",
+    title: "Java SE Programming  ",
+    center: "Link Academy",
+    description: ` Java SE junior`,
+    address: 'Timisoara Romania',
+  },
+  {
+    year: "2019",
     title: "Methods Agile Scrum ",
     center: "FEMXA",
     description: `Agile Methods and Implement-online`,
@@ -65,7 +81,8 @@ export const PROJECTS = [
     description:
       "e-commerce website, product listing, shopping cart and user authentication.",
     technologies: ["Shadcn/ui", "Tailwind", "Next.js", "Drizzle", "Postgresql","Neon"],
-    github:"https://github.com/floren2023/cata-de-vinos"
+    github:"https://github.com/floren2023/cata-de-vinos",
+    publicat:''
   },
   {
     title: "Website Cata de Vinos",
@@ -73,7 +90,8 @@ export const PROJECTS = [
     description:
       "A static page with Blog for `Cata de Vinos`",
     technologies: ["Shadcn/ui", "Tailwind", "Astro", "Drizzle", "Sqlite","Turso"],
-    github:"https://github.com/floren2023/catadevinos"
+    github:"https://github.com/floren2023/catadevinos",
+    publicat:''
   },
   {
     title: "Website Medicare",
@@ -81,7 +99,8 @@ export const PROJECTS = [
     description:
       "A static page for Medicare",
     technologies: ["Shadcn/ui", "Tailwind", "Astro"],
-    github:"https://github.com/floren2023/medicare_astro/tree/master"
+    github:"https://github.com/floren2023/medicare_astro/tree/master",
+    publicat:''
   },
   {
     title: "Food Delivery Online E-commerce",
@@ -90,7 +109,8 @@ export const PROJECTS = [
       " Deliver food online, many supliers",
     technologies: ["MUI", "Tailwind", "React", "SpringBoot","Postgresql"],
     github:"https://github.com/floren2023/frontendfooddeliveryreact",
-    gitbackend:"https://github.com/floren2023/onlidefooddeliverysytem"
+    gitbackend:"https://github.com/floren2023/onlidefooddeliverysytem",
+    publicat:''
   },
   {
     title: "Front End Clothes Store ",
@@ -100,6 +120,7 @@ export const PROJECTS = [
       "Front End Clothes Store, MUI Template",
     technologies: ["Tailwindcss", "CSS", "React", "Mui"],
     github:"https://github.com/floren2023/cata-de-vinos",
+    publicat:''
     
   },
   {
@@ -110,7 +131,8 @@ export const PROJECTS = [
       " Booking app, Hotel Holiday Inn",
     technologies: ["Tailwindcss", "CSS", "React", "Mui", "SpringBoot", "Postgresql"],
     github:"https://github.com/floren2023/holidayInn-frontendreact",
-    gitbackend:"https://github.com/floren2023/holidayInn-backend-react"
+    gitbackend:"https://github.com/floren2023/holidayInn-backend-react",
+    publicat:''
   },
   {
     title: " E-commerce Sport's Products",
@@ -119,7 +141,8 @@ export const PROJECTS = [
       " E-commerce, sports ",
     technologies: ["Angular", "Tailwind", "Typescript", "Mui", "SpringBoot", "Postgresql"],
     github:"https://github.com/floren2023/ecommerceweb",
-    gitbackend:"https://github.com/floren2023/backendecommerceweb/tree/main/ecommerceweb"
+    gitbackend:"https://github.com/floren2023/backendecommerceweb/tree/main/ecommerceweb",
+    publicat:''
   },
   {
     title: " E-commerce Restaurant Front End",
@@ -128,6 +151,7 @@ export const PROJECTS = [
       " Restaurant  with menus, booking",
     technologies: ["Angular", "Tailwind", "Typescript", "Mui", "SpringBoot", "Postgresql"],
     github:"https://github.com/floren2023/frontend-restaurante",
+    publicat:''
     
   },
 ];
