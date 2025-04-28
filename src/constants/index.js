@@ -46,7 +46,7 @@ export const EXPERIENCES = [
 export const EDUCATION = [
   {
     year: "1988 - 1993",
-    title: "Graduate Bachelor Computer Engineering ",
+    title: "Degree in Computer Science-Engennering ",
     center: "UPB",
     description: `Computer System Engineering`,
     address: 'Bucharest-Rumania',

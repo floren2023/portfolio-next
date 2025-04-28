@@ -88,7 +88,7 @@ function Hero() {
                hover:text-violet-600 rounded-lg flex gap-2"
             >
               <IoMdDownload />
-              <a download href="./CVROMANA.pdf" className="">
+              <a download href="./CVDev.pdf" className="">
               
                 Download CV
               </a>

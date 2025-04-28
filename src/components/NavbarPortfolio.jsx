@@ -6,6 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";
 import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
+import Link from "next/link"
 const navLinks = [
   {
     href: "/",
@@ -43,9 +44,10 @@ export default function NavPortfolio() {
       </div>
       <div className="flex md:order-2">
         <div className="flex  pr-4 m-2 gap-4 items-end text-end text-xl text-slate-300  justify-end  ">
-          <FaLinkedinIn />
-          <FaGithub />
-
+         <Link href="https://www.linkedin.com/in/florenta-vakar-ba072b362/" ><FaLinkedinIn /></Link>
+         <Link href="https://github.com/floren2023/portfolio-next"> <FaGithub />
+         </Link>
+         
          
         </div>
       </div>

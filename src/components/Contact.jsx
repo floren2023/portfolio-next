@@ -3,6 +3,7 @@ import React from "react";
 import { CONTACT } from "../constants/index.js";
 import {motion} from "framer-motion"
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import Link from "next/link"
 
 function Contact() {
   return (
@@ -111,11 +112,13 @@ function Contact() {
           <p>{CONTACT.address}</p>
           <p>{CONTACT.phoneNo}</p>
           <p>{CONTACT.email} </p>
-          <div className="flex gap-4 text-xl text-slate-300 pt-4"> <FaLinkedinIn />
-                    <FaGithub /></div>
+          <div className="flex gap-4 text-xl text-slate-300 pt-4">
+          <Link href="https://www.linkedin.com/in/florenta-vakar-ba072b362/" ><FaLinkedinIn /></Link>
+          <Link href="https://github.com/floren2023/portfolio-next"> <FaGithub /></Link>
         </div>
       </div>
     </div></div></div>
+    </div>
   );
 }
 
