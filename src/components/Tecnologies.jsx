@@ -10,12 +10,12 @@ import { IoLogoHtml5,IoLogoVercel } from "react-icons/io5";
 import {motion} from "framer-motion"
 
 const iconVariants=(duration)=>({
-    initial:{y:-10},
+    initial:{y:-5},
     animate:{
-        y:[10,-10],
+        y:[5,-5],
         transition:{
             duration:duration,
-            ease:"linear",
+            ease:[0, 0.1,0.9, 1],
             repeat:Infinity,
             repeatType:"reverse"
         }
@@ -37,7 +37,7 @@ function Tecnologies() {
            
             <div 
            
-             className='flex flex-wrap items-start justify-start gap-3 lg:pl-10'>
+             className='flex flex-wrap items-start justify-start gap-3 lg:pl-20'>
                 <motion.div 
                
                 variants= {iconVariants(2.5)}
@@ -62,14 +62,14 @@ function Tecnologies() {
                 </motion.div>
                 
                 <motion.div 
-                 variants= {iconVariants(4)}
+                 variants= {iconVariants(3.5)}
                  initial="initial"
                  animate="animate"
                 className="rounded-2xl border-2 border-neutral-600 p-3">
                     <FaCss3  className='text-4xl text-blue-600'/>
                 </motion.div>
                 <motion.div
-                 variants= {iconVariants(2)}
+                 variants= {iconVariants(1.5)}
                  initial="initial"
                  animate="animate"
                  className="rounded-2xl border-2 border-neutral-600 p-3">
@@ -104,7 +104,7 @@ function Tecnologies() {
                
                
                 <h2 className='my-10 text-start text-xl text-neutral-400 mx-10'>BackEnd</h2>
-                <div className='flex flex-wrap items-start justify-start gap-3 lg:pl-10'>
+                <div className='flex flex-wrap items-start justify-start gap-3 lg:pl-20'>
                 <motion.div 
                  variants= {iconVariants(2)}
                  initial="initial"
@@ -112,13 +112,13 @@ function Tecnologies() {
                     <SiMongodb className='text-4xl text-green-500'/>
                 </motion.div>
                 <motion.div 
-                 variants= {iconVariants(4)}
+                 variants= {iconVariants(3)}
                  initial="initial"
                  animate="animate"className="rounded-2xl border-2 border-neutral-600 p-3">
                     <GrMysql className='text-4xl text-blue-400'/>
                 </motion.div>
                 <motion.div
-                 variants= {iconVariants(3)}
+                 variants= {iconVariants(2)}
                  initial="initial"
                  animate="animate" className="rounded-2xl border-2 border-neutral-600 p-3">
                     <SiPostgresql className='text-4xl text-sky-700'/>
@@ -130,14 +130,14 @@ function Tecnologies() {
                     <BiLogoSpringBoot  className='text-4xl text-green-400'/>
                 </motion.div>
                 <motion.div 
-                 variants= {iconVariants(6)}
+                 variants= {iconVariants(3)}
                  initial="initial"
                  animate="animate"
                 className="rounded-2xl border-2 border-neutral-600 p-3">
                     <RiPhpFill className='text-4xl text-white bg-violet-400 p-1 rounded-full'/>
                 </motion.div>
                 <motion.div
-                 variants= {iconVariants(4)}
+                 variants= {iconVariants(3)}
                  initial="initial"
                  animate="animate"
                  className="rounded-2xl border-2 border-neutral-600 p-3">

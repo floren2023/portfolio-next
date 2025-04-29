@@ -4,11 +4,27 @@ export const ABOUT_CONTENT = `I have shaped my skills in front-end technologies
 
 export const ABOUT = `I am a passionate programmer and dreamer who loves nature and hiking. `;
 
-export const HERO_PRINCIPAL=`Are you suffering of: lack of online presence,
-    outdated websites, difficulty selling online, bad SEO issues, bad user experience, lost marketing opportunities,
+export const HERO_PRINCIPAL=`Are you suffering of: lack of online presence, outdated websites,
+ difficulty selling online, bad SEO issues, bad user experience, lost marketing opportunities,
      disorganized content, credibility problems ?`
 export const  HERO_SECONDARY=`I build professional websites especially for new or small businesses.`
 
+   export const HERO=[
+    {
+      text:'I build professional websites for new or small businesses.',
+       },
+       { // wait 1s before replacing "Mice" with "Hamsters"
+       text:  'Landing Pages & Marketing Sites campaigns, products, or events',
+       },
+       {  
+        text:'I build Internal Tools & Admin Panels for managing users, content, inventory ',
+       },{
+        text:'I build responsive/mobile-friendly sites',
+       },
+        
+  
+
+   ]
    
 
 
@@ -82,7 +98,7 @@ export const PROJECTS = [
       "e-commerce website, product listing, shopping cart and user authentication.",
     technologies: ["Shadcn/ui", "Tailwind", "Next.js", "Drizzle", "Postgresql","Neon"],
     github:"https://github.com/floren2023/cata-de-vinos",
-    publicat:''
+    publicat:'https://cata-de-vinos.vercel.app/'
   },
   {
     title: "Website Cata de Vinos",

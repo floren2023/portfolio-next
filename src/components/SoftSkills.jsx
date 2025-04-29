@@ -8,7 +8,7 @@ export function SoftSkills() {
          <motion.h1  whileInView={{opacity:1, x:0}}
            initial={{opacity:0, x:-100}}
            transition={{duration:1.5}}
-         className='my-10 text-start text-2xl text-neutral-200 pl-20 mx-10 '>
+         className='my-10 text-start text-2xl text-neutral-200 pl-10 mx-10 '>
         Soft Skills
       </motion.h1>
    <div >
@@ -17,7 +17,7 @@ export function SoftSkills() {
     <div 
      
     className="flex gap-6
-      p-4 bg-gray-900 border-none sm:mx-0 md:mx-4 lg:mx-10 rounded-md shadow3">
+      p-4 bg-gray-900 shadow3 border-1 border-neutral-600 sm:mx-0 md:mx-4 lg:mx-10 rounded-md shadow3">
     <div className="w-1/5 ">
         <img src="./hombre.png" width="150px" height="180px" alt="man"/>
     </div>

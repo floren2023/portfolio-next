@@ -22,7 +22,7 @@ function Contact() {
       
       className=" grid sm:grid-cols-1 bg-transparent
        md:grid-cols-1 lg:grid-cols-2 mt-4 sm:mx-0 md:mx-20 
-       lg:mx-50 rounded-md mb-10 p-6 border-1 border-slate-700"
+       lg:mx-50 rounded-md mb-10 p-6 "
     >
       <div className=" ">
         <h1 className="text-center text-4xl text-purple-700 pt-10">
