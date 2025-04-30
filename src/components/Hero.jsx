@@ -17,7 +17,7 @@ function Hero() {
   return (
     <div
       className="flex flex-col items-center sm:mx-0 md:mx-0 pt-10 h-full
-    lg:pl-20 mx-10 lg:mb-10 sm:mb-20" 
+    lg:pl-20 mx-10 lg:mb-10 sm:mb-10" 
     >
       <div className=" lg:mx-20 sm:mx-4 md:mx-4 ">
         <div className="text-center items-center ">
@@ -25,9 +25,9 @@ function Hero() {
               whileInView={{opacity:1, y:0}}
               initial={{opacity:0, y:-100}}
               transition={{duration:0.5}}
-            className="sm:text-3xl md:text-4xl lg:text-6xl mb-10 tracking-tight font-normal
+            className="sm:text-4xl md:text-4xl lg:text-6xl mb-10 tracking-tight font-normal
                    bg-clip-text text-transparent bg-gradient-to-r from-violet-500
-                    via-gray-500 to-fuchsia-400 "
+                    via-fuchsia-500 to-blue-300 "
           >
             HI, I'M FLOREN
           </motion.h1>
@@ -55,8 +55,8 @@ function Hero() {
               initial="hidden"
               animate="visible"
               className="text-slate-200 mt-4 font-light tracking-wider py-2 
-               text-2xl text-shadow-2xs justify-center text-center
-               text-shadow-gray-200"
+               lg:text-2xl text-shadow-2xs justify-center text-center
+               text-shadow-gray-200 sm:text-xl md:text-xl"
             >
               {HERO_SECONDARY}
             </motion.div>
@@ -71,12 +71,14 @@ function Hero() {
               animate="visible"
             >
               <a
-                href="/contact"
+                href="/contact">
+                <div 
                 className="pt-4 px-4 text-md bg-gradient-to-r
-               from-fuchsia-500 via-violet-500
+               from-fuchsia-500 via-violet-500 sm:text-sm md:text-md lg:text-lg
                 to-blue-500 text-white  opacity-0.8 shadow-md p-4 rounded-lg items-center"
               >
-                Contact ME!
+                Contact Me!
+                </div>
               </a>
             </motion.div>
             <motion.div
@@ -85,13 +87,14 @@ function Hero() {
               whileTap={{ scale: 1.15 }}
               initial="hidden"
               animate="visible"
-              className="pt-3 pb-3 px-4 border-2 border-violet-600 
+              className=" "
+            >
+              <a download href="./CVDev.pdf" className="pt-4 pb-4 px-4 border-2 border-violet-600 sm:text-sm md:text-md lg:text-lg
                hover:border-violet-600 text-md
                text-violet-600 items-center
-               hover:text-violet-600 rounded-lg flex gap-2"
-            >
+               hover:text-violet-600 rounded-lg flex gap-2">
               <IoMdDownload />
-              <a download href="./CVDev.pdf" className="">
+              
                 Download CV
               </a>
             </motion.div>

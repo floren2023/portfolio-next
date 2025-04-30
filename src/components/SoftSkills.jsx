@@ -1,6 +1,7 @@
 import { Card } from "flowbite-react";
 import { SOFT_SKILLS, LANGUAGES } from "@/constants";
 import {motion} from 'framer-motion'
+import Image from "next/image";
 
 export function SoftSkills() {
   return (
@@ -16,21 +17,23 @@ export function SoftSkills() {
     
     <div 
      
-    className="flex gap-6
-      p-4 bg-gray-900 shadow3 border-1 border-neutral-600 sm:mx-0 md:mx-4 lg:mx-10 rounded-md shadow3">
-    <div className="w-1/5 ">
-        <img src="./hombre.png" width="150px" height="180px" alt="man"/>
+    className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6
+      p-4  sm:mx-0 md:mx-4 lg:mx-10 justify-center items-center m-auto">
+    <div className="justify-center m-auto opacity-0.7 sm:pt-0 lg:pt-2 items-center sm:mb-4 ">
+        <Image src="/hombre.png" width={130} height={150} alt="man" className=" justify-center pt-2 items-center "/>
     </div>
-     <div className=" pt-10 w-3/5">
+     <div className=" pt-10  lg:col-span-2 bg-gray-900 shadow3 border-1 border-neutral-600 rounded-md p-4 pl-4">
+       <div className="grid  sm:grid-cols-1 md:grid-cols-1 grid-cols-2  sm:gap-2 md:gap-2 lg:gap-4 ">
       {SOFT_SKILLS.map((item, index) => (
-        <div className="flex gap-10  justify-items-start mb-2 " key={index}>
-          <div className="text-md text-slate-200 w-1/3 text-start  font-medium justify-center">{item.name}   </div>
-          <div className="text-md text-slate-400 text-start justify-start">{item.description}</div>
+        <div className="  justify-items-start  " key={index}>
+          <div className="text-md text-slate-200  text-start  font-medium justify-start pl-2">{item.name}   </div>
+          <div className="text-md text-slate-400 text-start justify-start pl-2">{item.description}</div>
         </div>
       ))}
       </div>
-      <div className="text-slate-200 p-4 ">
-        <h4 className="text-slate-100 text-bold text-start mb-2 mt-4">Languages</h4>
+      </div>
+      <div className="text-slate-200 p-4 bg-gray-900 shadow3 border-1 border-neutral-600 rounded-md pl-8">
+        <h4 className="text-slate-100 text-bold text-start mb-4 mt-4 pl-8">Languages</h4>
   {LANGUAGES.map((language,index)=>(
     <div key={index} className="text-slate-300">
         {language.lang}<span className="text-amber-500 text-md text-medium pl-4">{language.cal}</span>

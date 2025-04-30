@@ -8,9 +8,11 @@ export function CardExperience({
   technologies,
 }) {
   return (
-    <Card className="bg-gray-900 text-slate-200 text-md h-[280px] border-1 border-neutral-600 shadow3">
+  
+    <Card className="border-1 border-neutral-600  text-slate-200 text-md h-[300px]  bg-gray-900 rounded-md  shadow3">
+      
       <div className="w-full ">
-        <p className=" text-neutral-400 text-sm mb-4">{year}</p>
+        <p className=" text-neutral-400 text-sm mb-2">{year}</p>
       
       
         <h5 className="font-semibold mb-4 text-md">
@@ -29,6 +31,8 @@ export function CardExperience({
           </span>
         ))}</div>
       </div>
+      
     </Card>
+    
   );
 }

@@ -25,6 +25,10 @@ const navLinks = [
     href: "/projects",
     title: "Projects",
   },
+  {
+    href: "/contact",
+    title: "Contact",
+  },
   
 ];
 

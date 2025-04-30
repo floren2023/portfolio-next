@@ -4,6 +4,9 @@ import Image from "next/image"
 import {motion} from "framer-motion"
 import { ABOUT_CONTENT,ABOUT } from "../constants";
 
+
+
+
 const container=(delay)=>({
   hidden:{x:-100, opacity:0},
   visible:{x:0, opacity:1,
@@ -39,8 +42,8 @@ export default function About() {
              variants={container(1)}
              initial="hidden"
              animate="visible"
-          className="justify-center items-center flex ">
-            <Image src="/assets/about.jpg" width={400} height={200} alt="about me" />
+          className="justify-center mx-auto ">
+            <Image src="/assets/about.png" width={300} height={160} alt="about me" className="mx-auto"/>
           </motion.div>
         </div>
         <div className="p-4">
@@ -50,15 +53,15 @@ export default function About() {
             initial="hidden"
             animate="visible"
           className="text-slate-200 my-2 font-light text-center
-           tracking-wider py-2 max-w-xl md:text-xl lg:text-2xl ">
+           tracking-wider py-2  md:text-xl lg:text-2xl justify-center ">
             {ABOUT}
           </motion.div>
           <motion.div
             variants={container1(3)}
             initial="hidden"
             animate="visible"
-          className="text-slate-200 text-center 
-           my-2 font-light tracking-wider py-2 max-w-xl sm:text-sm lg:text-md lg:text-md  justify-center">
+          className="text-slate-200  
+           my-2 font-light tracking-wider py-2 sm:text-sm lg:text-md lg:text-md  justify-center text-center">
             {ABOUT_CONTENT}
           </motion.div>
           </div>
