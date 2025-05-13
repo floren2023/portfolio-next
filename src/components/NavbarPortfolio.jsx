@@ -48,9 +48,9 @@ export default function NavPortfolio() {
         </a>
       </div>
       <div className="flex md:order-2">
-        <div className="flex  pr-4 m-2 gap-4 items-end text-end text-xl text-slate-300  justify-end  ">
-         <Link href="https://www.linkedin.com/in/florenta-vakar-ba072b362/" ><FaLinkedinIn /></Link>
-         <Link href="https://github.com/floren2023/portfolio-next"> <FaGithub />
+        <div className="flex  pr-4 m-2 gap-4 items-end text-end text-xl text-violet-700  justify-end  ">
+         <Link href="https://www.linkedin.com/in/florenta-vakar-ba072b362/" className="hover:text-fuchsia-700"><FaLinkedinIn /></Link>
+         <Link href="https://github.com/floren2023/portfolio-next" className="hover:text-fuchsia-700"> <FaGithub />
          </Link>
          
          

@@ -96,9 +96,8 @@ function Contact() {
             <input  {...register('name')}
               type="text"
               id="name"
-              className="bg-slate-800   text-gray-300 text-sm rounded-lg
-      block w-full p-2.5 dark:bg-gray-700 
-      dark:placeholder-gray-600 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500"
+              className="bg-fuchsia-950   text-gray-300 text-sm rounded-lg outline-hidden block w-full p-2.5 "
+      
               placeholder="John Doe"
               required
             />
@@ -115,9 +114,7 @@ function Contact() {
             <input  {...register('email')}
               type="email"
               id="email"
-              className="bg-slate-800   text-gray-300 text-sm rounded-lg
-      block w-full p-2.5 dark:bg-gray-700 
-      dark:placeholder-gray-600 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500"
+              className="bg-fuchsia-950   text-gray-300 text-sm rounded-lg outline-hidden block w-full p-2.5"
               placeholder="name@name.com"
               required
             />
@@ -135,9 +132,7 @@ function Contact() {
             <textarea {...register('message')}
               id="message"
               name="message" rows="3"
-              className="bg-slate-800   text-gray-300 text-sm rounded-lg
-      block w-full p-2.5 dark:bg-gray-700 
-      dark:placeholder-gray-600 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500"
+              className="bg-fuchsia-950   text-gray-300 text-sm rounded-lg outline-hidden block w-full p-2.5"
               required
             />
             {errors.message && (
@@ -147,8 +142,8 @@ function Contact() {
 
           <button
             type="submit"
-            className="text-gray-300 bg-fuchsia-800 mt-4 hover:bg-fuchsia-700 focus:ring-4 focus:outline-none
-   focus:ring-violet-300 font-medium rounded-lg text-md w-full sm:w-auto px-5 py-3 my-6 text-center"
+            className="text-gray-300 bg-violet-800 mt-4 hover:bg-fuchsia-700 focus:ring-2 focus:outline-none
+   focus:ring-black font-medium rounded-lg text-md w-full sm:w-auto px-5 py-3 my-6 text-center"
           >
             Send
           </button>

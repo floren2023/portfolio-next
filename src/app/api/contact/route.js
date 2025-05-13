@@ -10,7 +10,7 @@ export async function POST(req,res) {
   const { name, email, message } = req
   try {
     const { data, error } = await resend.emails.send({
-      from: 'Contact <florendesign@florenwebdesign.com>',
+      from: 'Acme <onboarding@resend.dev>',
       to: ['florentavakar@gmail.com'],
       subject: 'Contact Form',
       react: <>
@@ -20,11 +20,14 @@ export async function POST(req,res) {
     });
 
     if (error) {
-      return Response.json({ error }, { status: 500 });
+      return NextResponse.json({ error }, { status: 500 });
+    }
+    else{
+      return NextResponse.json({ succes }, { status: 200 });
     }
 
-    return Response.json(data);
+    
   } catch (error) {
-    return Response.json({ error }, { status: 500 });
+    return NextResponse.json({ error }, { status: 500 });
   }
 }
