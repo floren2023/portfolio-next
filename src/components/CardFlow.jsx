@@ -5,8 +5,8 @@ import {  FaGithub , FaGlobe} from "react-icons/fa";
 export function CardFlow({title,description,image,technologies,github,gitbackend,publicat}) {
   return (
     <Card
-      className="max-w-sm shadow3 mt-10 sm:h-[450px]  lg:mt-0 lg:h-[440px]
-       bg-gray-900  border-1 border-neutral-600 "
+      className="max-w-sm shadow3 mt-10 sm:h-[450px]  lg:mt-0 lg:h-[450px] bg-black border-none pb-4"
+         
       imgAlt={image}
       imgSrc={image}
     >
@@ -18,15 +18,15 @@ export function CardFlow({title,description,image,technologies,github,gitbackend
         {description}      </p>
         <div className='flex flex-wrap'>
         {technologies.map((tech,index)=>(
-            <span key={index} className='text-sm text-violet-500
+            <span key={index} className='text-sm text-fuchsia-600
              mr-1 tracking-tighter bg-slate-800
              rounded-md px-1  '>{tech}</span>
         ))}
       </div>
       </div>
       
-      <div className='flex  gap-4  content-baseline  justify-center border-1 border-slate-400
-       p-2 items-center w-[74px] rounded-2xl mx-auto '>
+      <div className='flex  gap-4  content-baseline  justify-center mb-4 shadow3
+       p-2 items-center w-[74px] rounded-2xl  bg-purple-950 mx-auto '>
         
       <div className=' align-bottom items-baseline'>
         <a href={github} className='text-xl text-green-500  '>
@@ -36,10 +36,7 @@ export function CardFlow({title,description,image,technologies,github,gitbackend
         <a href={publicat} className='text-xl text-red-500  '>
         <FaGlobe/></a>
       </div>
-    {/*  {gitbackend&&( <div className='align-bottom items-baseline'>
-        <a href={gitbackend} className='text-sm text-red-500  '>
-        Git backend</a>
-      </div>)} */}
+  
       </div>
       
     </Card>

@@ -8,8 +8,8 @@ export default function CardStudies({
   address,
 }) {
   return (
-    <div className=" shadow3 h-[240px] border-1 border-neutral-600 p-4 flex gap-2 flex-col rounded-md ">
-      <div className="pt-1 font-semibold  text-md  text-gray-300 mb-2">{title}</div>
+    <div className=" shadow3 h-[240px]  p-4 flex gap-2 flex-col rounded-md ">
+      <div className="pt-4 font-semibold  text-xl  text-fuchsia-600  mb-4">{title}</div>
       <div className=" text-neutral-400 text-sm  ">{description}</div>
       <p className=" text-neutral-400 text-sm ">
         {year} - <span className="text-neutral-300">{center}</span>

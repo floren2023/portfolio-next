@@ -174,7 +174,7 @@ export const PROJECTS = [
 export const SOFT_SKILLS=[
   {
     name:"dedicated",
-    description:"dedicated of achieving the goal"
+    description:"dedicated to achieve the goal"
 
   },
   
@@ -186,10 +186,14 @@ export const SOFT_SKILLS=[
   
   {
     name:"hard worker",
-    description:"search the best solution in hard times"
+    description:"search best solutions and time management"
 
   },
-  
+  {
+    name:"team work",
+    description:"good communication skills "
+
+  },
 
 ]
 

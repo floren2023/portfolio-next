@@ -1,4 +1,4 @@
-export const  sitemap=async()=>{
+export default sitemap=async()=>{
     return[
         {
             url:baseUrl ,lastModified:new Date()

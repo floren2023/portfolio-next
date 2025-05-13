@@ -11,7 +11,7 @@ function Experience() {
             whileInView={{opacity:1, x:0}}
             initial={{opacity:0, x:-100}}
             transition={{duration:1.5}}
-             className='my-10 text-start text-2xl text-neutral-200 pl-20 pt-4 '>
+             className='my-10 text-start text-2xl text-neutral-200 pl-20 pt-4 font_title'>
             Experience</motion.div>
             <div 
              

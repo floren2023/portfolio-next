@@ -32,7 +32,7 @@ export default function About() {
         initial={{opacity:0, y:-100}}
         transition={{duration:0.5}} 
        
-      className="mt-14 mb-10  text-center  md:text-3xl lg:text-4xl text-fuchsia-600">
+      className="mt-14 mb-10  text-center  md:text-3xl lg:text-4xl text-fuchsia-600 font_title">
         About<span className="text-slate-200 pl-2">Me</span>
       </motion.div>
       <div className="grid sm:grid-cols-1 md:grid-cols-1 gap-10 lg:grid-cols-2 sm:mx-0 md:mx-4 lg:mx-10">

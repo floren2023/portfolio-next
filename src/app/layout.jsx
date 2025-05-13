@@ -1,12 +1,14 @@
-import { Inter } from "next/font/google";
+import { Bricolage_Grotesque, Inter } from "next/font/google";
 import "./globals.css";
 import NavbarPortfolio from "../components/NavbarPortfolio";
 import Footer from "../components/Footer";
+import { Merriweather_Sans,Bricolage_Grotesque } from "next/font/google";
 
-const interSans = Inter({
-  variable: "--font-inter-sans",
+const merriweather = Merriweather_Sans({
+  variable: "--font-merriweather-sans",
   subsets: ["latin"],
 });
+const bricolageGrotesque = Bricolage_Grotesque({variable: "--font-bricolagegrotesque-sans", subsets: ['latin'] }) 
 
 
 
@@ -24,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${interSans.variable}  antialiased`}
+        className={`${merriweather.variable} ${bricolageGrotesque.variable}  antialiased`}
       >
         <div className="absolute inset-0 -z-10 h-full w-full ">
          <NavbarPortfolio />

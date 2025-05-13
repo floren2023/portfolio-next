@@ -13,9 +13,9 @@ function MenuOverlay({ links }) {
     whileInView={{opacity:1, y:0}}
     initial={{opacity:0, y:-100}}
     transition={{duration:0.5}}
-      className=" lg:hidden    md:flex md:flex-col sm:flex sm:flex-col
-         items-center  fixed top-17  border-2  border-fuchsia-700 right-4  left-4 z-50  bg-gray-800 
-          rounded-md mx-auto shadow3"
+      className=" lg:hidden    md:flex md:flex-col sm:flex sm:flex-col w-[250px]
+         items-center  fixed top-17   right-4 left-100 z-50  bg-black 
+          rounded-md  shadow3"
     >
       {links.map((link, index) => (
         <li

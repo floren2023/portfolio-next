@@ -31,9 +31,9 @@ function Tecnologies() {
            whileInView={{opacity:1, x:0}}
            initial={{opacity:0, x:-100}}
            transition={{duration:2}}
-           className='my-10 text-start text-2xl text-neutral-200 pl-20 '>Tecnologies</motion.h1>
+           className='my-10 text-start text-2xl text-neutral-200 pl-20 font_title'>Tecnologies</motion.h1>
            
-           <h2 className='my-10 text-start text-xl text-neutral-400 mx-10'>FrontEnd</h2>
+           <h2 className='my-10 text-start text-xl text-fuchsia-600 ml-20 font_title'>FrontEnd</h2>
            
             <div 
            
@@ -103,7 +103,7 @@ function Tecnologies() {
                </div>
                
                
-                <h2 className='my-10 text-start text-xl text-neutral-400 mx-10'>BackEnd</h2>
+                <h2 className='my-10 text-start text-xl text-fuchsia-600 ml-20 font_title'>BackEnd</h2>
                 <div className='flex flex-wrap items-start justify-start gap-3 lg:pl-20'>
                 <motion.div 
                  variants= {iconVariants(2)}

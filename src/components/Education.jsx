@@ -11,7 +11,7 @@ export default function Education() {
            whileInView={{opacity:1, x:0}}
            initial={{opacity:0, x:-100}}
            transition={{duration:1.5}}
-         className='my-10 text-start text-2xl text-neutral-200 pl-20 '>Education</motion.h1>
+         className='my-10 text-start text-2xl text-neutral-200 pl-20 font_title'>Education</motion.h1>
         <div 
         
         className='grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:mx-0 md:mx-0 lg:mx-10'>

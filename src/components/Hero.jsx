@@ -27,7 +27,7 @@ function Hero() {
               transition={{duration:0.5}}
             className="sm:text-4xl md:text-4xl lg:text-6xl mb-10 tracking-tight font-normal
                    bg-clip-text text-transparent bg-gradient-to-r from-violet-500
-                    via-fuchsia-500 to-blue-300 "
+                    via-fuchsia-500 to-blue-300 font_title"
           >
             HI, I'M FLOREN
           </motion.h1>
@@ -37,7 +37,7 @@ function Hero() {
             initial="hidden"
             animate="visible"
             className="sm:text-2xl md:text-3xl lg:text-4xl bg-clip-text text-transparent tracking-thin 
-                         bg-gradient-to-r from-fuchsia-500 via-purple-500 to-pink-500 mb-4"
+                         bg-gradient-to-r from-fuchsia-500 via-purple-500 to-pink-500 mb-4 font_title"
           >
             <TypeAnimation
               sequence={["WEB DEVELOPER", 2000, "FULL STACK DEVELOPER", 2000]}
@@ -65,8 +65,8 @@ function Hero() {
             <motion.div
               className=" "
               variants={container(3)}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 1.15 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 1.05 }}
               initial="hidden"
               animate="visible"
             >
@@ -74,7 +74,7 @@ function Hero() {
                 href="/contact">
                 <div 
                 className="pt-4 px-4 text-md bg-gradient-to-r
-               from-fuchsia-500 via-violet-500 sm:text-sm md:text-md lg:text-lg
+               from-fuchsia-500 via-violet-500 sm:text-md md:text-md lg:text-xl
                 to-blue-500 text-white  opacity-0.8 shadow-md p-4 rounded-lg items-center"
               >
                 Contact Me!
@@ -83,13 +83,14 @@ function Hero() {
             </motion.div>
             <motion.div
               variants={container(4)}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 1.15 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 1.05 }}
               initial="hidden"
               animate="visible"
               className=" "
             >
-              <a download href="./CVDev.pdf" className="pt-4 pb-4 px-4 border-2 border-violet-600 sm:text-sm md:text-md lg:text-lg
+              <a download href="./CVDev.pdf" className="pt-4 pb-4 px-4 border-2 border-violet-600 
+              sm:text-md md:text-md lg:text-xl
                hover:border-violet-600 text-md
                text-violet-600 items-center
                hover:text-violet-600 rounded-lg flex gap-2">

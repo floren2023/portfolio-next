@@ -15,7 +15,7 @@ function Projects() {
           initial={{opacity:0, x:-100}}
           transition={{duration:1.5}}
           
-         className='my-16 text-center text-4xl pt-14 text-fuchsia-600 '>PROJECTS</motion.h1>
+         className='my-16 text-center text-4xl pt-14 text-fuchsia-600 font_title '>PROJECTS</motion.h1>
         <div 
          
         className='grid mx-auto justify-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3
