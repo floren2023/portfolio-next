@@ -44,7 +44,7 @@ body {
 
 
 .shadow3{
-box-shadow: rgba(248, 247, 247, 0.16) 0px 10px 36px 0px, rgba(183, 6, 153, 0.06) 0px 0px 0px 1px;
+box-shadow: rgba(226, 20, 161, 0.16) 0px 10px 36px 0px, rgba(245, 73, 217, 0.06) 0px 0px 0px 1px;
 }
 .font_title{
   font-family: var(--font-bricolagegrotesque-sans);

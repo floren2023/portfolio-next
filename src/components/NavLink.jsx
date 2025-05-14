@@ -13,7 +13,7 @@ function NavLink({ href, title }) {
       className={
         pathname === href
           ? "text-md  cursor-pointer  text-fuchsia-700 duration-200 ease-in-out"
-          : "text-slate-300 text-md   hover:text-fuchsia-700 cursor-pointer duration-300 ease-in-out"
+          : "text-gray-400 text-md   hover:text-fuchsia-700 cursor-pointer duration-300 ease-in-out"
       }
     >
       {" "}

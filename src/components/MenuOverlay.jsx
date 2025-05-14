@@ -14,7 +14,7 @@ function MenuOverlay({ links }) {
     initial={{opacity:0, y:-100}}
     transition={{duration:0.5}}
       className=" lg:hidden    md:flex md:flex-col sm:flex sm:flex-col w-[250px]
-         items-center  fixed top-17   right-4 left-100 z-50  bg-black 
+         items-center  fixed top-17   right-4 mx-auto z-50  bg-black 
           rounded-md  shadow3"
     >
       {links.map((link, index) => (

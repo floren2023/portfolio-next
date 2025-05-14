@@ -25,7 +25,7 @@ function Hero() {
               whileInView={{opacity:1, y:0}}
               initial={{opacity:0, y:-100}}
               transition={{duration:0.5}}
-            className="sm:text-4xl md:text-4xl lg:text-6xl mb-10 tracking-tight font-normal
+            className=" lg:text-6xl mb-10 tracking-tight font-normal
                    bg-clip-text text-transparent bg-gradient-to-r from-violet-500
                     via-fuchsia-500 to-blue-300 font_title"
           >
@@ -36,7 +36,7 @@ function Hero() {
             variants={container(1)}
             initial="hidden"
             animate="visible"
-            className="sm:text-2xl md:text-3xl lg:text-4xl bg-clip-text text-transparent tracking-thin 
+            className=" md:text-3xl lg:text-4xl bg-clip-text text-transparent tracking-thin 
                          bg-gradient-to-r from-fuchsia-500 via-purple-500 to-pink-500 mb-4 font_title"
           >
             <TypeAnimation
